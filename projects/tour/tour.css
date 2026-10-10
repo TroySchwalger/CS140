@@ -1,5 +1,35 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background:url(tiledsky.jpg) repeat rgb(86, 207, 255);
+}
 
+main {
+    background: url(mongolmap.png) no-repeat center;
+}
+
+h1 {
+    color: goldenrod
+}
+
+h2 {
+    color: goldenrod
+}
+
+ul {
+    list-style-image: url(gerdot.png);
+}
+
+.current {
+    color:red;
+}
 
 .bold {
     font-weight: 900;
+}
+
+.shrink {
+    width: 500px;
+}
+.shrink2 {
+    width: 700px;
 }
