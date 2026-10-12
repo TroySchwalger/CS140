@@ -1,0 +1,28 @@
+header {
+    color:chocolate
+}
+header p {
+    color:orange
+}
+main p {
+    color:cadetblue
+    
+}
+footer {
+    color:blueviolet
+}
+#bee {
+    color:yellow
+}
+#pnf {
+    color:darkred
+}
+.green {
+    color:green
+}
+.bold {
+    font-weight: 800;
+}
+.red {
+    color:red
+}
