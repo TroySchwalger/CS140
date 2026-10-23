@@ -1,11 +1,17 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: aquamarine;
+}
+
+nav {
+    display:flex;
+    justify-content: space-evenly;
 }
 
 nav a {
-    display:block;
     border-radius: 10px;
     border: 5px dotted orange;
+    padding:5px 20px;
     background-color: black;
     color:orangered;
     box-shadow:0px 0px 10px orangered;
@@ -19,20 +25,35 @@ nav a:hover {
 }
 
 .parent {
+    display:grid;
+    grid-template-columns: 1fr 5fr;
+    gap:10px;
+}
+.child2 {
     display:flex;
     flex-wrap: wrap;
-    gap:10px
+    gap:20px
 }
 
 .card {
     border: 5px solid black;
     background-color: orange;
-    
-    
+    box-shadow: 5px 5px 10px black;
+    width:330px;
 }
 
 .card:hover {
     border: 5px solid orange;
     background-color: black;
-    color:orangered
+    color:orangered;
+    box-shadow: 5px 5px 10px orangered;
+}
+
+.sidebar {
+    width:200px;
+}
+
+.spam {
+    display: grid;
+    grid-template-columns: repeat(5,20%);
 }
