@@ -76,7 +76,33 @@ main {
     gap:20px
 }
 
+@media ONLY screen AND (max-width:560px) {
+    nav {
+        flex-direction: column;
+    }
 
+    nav a {
+        padding:20px 5px;
+        font-size: large;
+    }
+    
+    .parent {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .sidebar {
+        width:100%
+    }
+
+    main {
+        width:100%
+    }
+
+    .card {
+        width:100%
+    }
+}
 
 @media print {
     nav {
