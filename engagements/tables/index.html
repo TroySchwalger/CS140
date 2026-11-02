@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <link rel="stylesheet" href="tables.css">
+</head>
+<body>
+    <header>
+        <h1>How the turn tables</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+    </nav>
+    <main>
+        <h1>My Class Schedule</h1>
+        <table border="10">
+            <caption><h2>Class Schedule</h2></caption>
+            <tr>
+                <th colspan="6">Fall Semester</th>
+            </tr>
+            <thead>
+                <tr>
+                    <th scope="col">Time</th>
+                    <th scope="col">Dept.</th>
+                    <th scope="col">Num.</th>
+                    <th scope="col">Class</th>
+                    <th scope="col">Location</th>
+                    <th scope="col">Credits</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>9:00 AM</td>
+                    <td>Math</td>
+                    <td>213</td>
+                    <td>Calc II</td>
+                    <td>SCB</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>10:00 AM</td>
+                    <td>EDU</td>
+                    <td>212</td>
+                    <td>Education with tech</td>
+                    <td>TEB</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>11:00 AM</td>
+                    <td>CS</td>
+                    <td>140</td>
+                    <td>Web Design</td>
+                    <td>P2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>12:00 PM</td>
+                    <td>TESOL</td>
+                    <td>240</td>
+                    <td>Intro to TESOL</td>
+                    <td>MCK</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+            <body>
+                <tr>
+                    <th colspan="6">Winter Semester</th>
+                </tr>
+                <tr>
+                    <td>8:00 AM</td>
+                    <td rowspan="4">Sports</td>
+                    <td>120</td>
+                    <td>Basketball</td>
+                    <td rowspan="2">CAC</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>9:00 AM</td>
+                    <td>140</td>
+                    <td>Badminton</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>10:00 AM</td>
+                    <td>130</td>
+                    <td>Soccer</td>
+                    <td rowspan="2">Field</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>11:00 AM</td>
+                    <td>170</td>
+                    <td>Rugby</td>
+                    <td>2</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="5">Total Credits</th>
+                    <td>21</td>
+                </tr>
+            </tfoot>
+        </table>
+        <ul>
+            <li>Tables are useful for organizing a schedule with varied catagories with subcatagories</li>
+            <li>You dont use a table for a sidebar or a group of repeating or similar items</li>
+            <li>If there is a possibility of someone using a screenreader or other need</li>
+            <li>The introductory question helped understand the basics of the table.</li>
+            <li>It did not give more than I needed. It gave examples so that I can see how it is placed but it used different examples and quizzed me after.</li>
+        </ul>
+    </main>
+    <footer>
+        <p>&copy; Troy Schwalger</p>
+    </footer>
+</body>
+</html>
