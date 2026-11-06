@@ -19,6 +19,7 @@ main {
 #SSB {
     border:2px solid blue;
     background-color: rgb(255, 124, 124);
+    width:100%;
 }
 
 #SSB caption {
