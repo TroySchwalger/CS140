@@ -29,6 +29,12 @@ main {
     letter-spacing: 2px;
     background-color: orangered;
     text-shadow: 2px 2px 10px rgb(90, 178, 255);
+    border: 5px dotted blue;
+    border-radius: 10px;
+    border-top-color: rgb(109, 0, 0);
+    border-right-color: rgb(0, 255, 0);
+    border-left-color: blue;
+    border-bottom-color:yellow
 }
 
 #SSB th {
