@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <header>
+        <h1>Sign Up</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+    </nav>
+    <main>
+        <h2>Fantastic freeform figs for four fizzy fruits</h2>
+        <form action="formprocessing.html" method="post">
+            <div class="form-row">
+                <label for="personname">Full Name</label>
+                <input id="personname" type="text" name="fullname" placeholder="Full Name">
+            </div>
+            <div class="form-row">
+                <label for="emailname">Email</label>
+                <input id="emailname" type="text" name="email" placeholder="Email">
+            </div>
+            <div class="form-row">
+                <label for="passcode">Password</label>
+                <input id="passcode" type="password" name="password" placeholder="Password">
+            </div>
+            <div class="form-row">
+                <label name="state">State</label>
+                <select name="state" id="state">
+                    <option value="blank">--------</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="CO">Colorado</option>
+                    <option value="UT">Utah</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <input type="submit">
+            </div>
+        </form>
+        <ul>
+            <li>The action attribute that we used transfers the user to the set page when the action is made. </li>
+            <li>The method tag is what will occur when the action is taken. For this case it gets the new page. It declares if its post or get.</li>
+            <li>The difference between POST and GET is that GET includes what was inputted into the url. POST does not include the inputted things into the url.</li>
+            <li>For textboxes, you can set the value to something already inputted in when the page loads with the value field</li>
+            <li>For text areas, you set it by placing what you want between the tags</li>
+            <li>Select boxes has the name of each option in a value tag</li>
+            <li>Checkboxes can start with the boxes checked by having the value be yes.</li>
+            <li>Radio buttons can se the name of the button with the value attribute.</li>
+            <li>New form controls are url, email, tel, number, range, color, search, and some date and time ones. We didnt try out any of these new ones but we couldve for the eamil.</li>
+        </ul>
+    </main>
+    <footer>
+        <p>&copy; Troy Schwalger</p>
+    </footer>
+</body>
+</html>
