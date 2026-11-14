@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Character</title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+<body>
+    <header>
+        <h1>Create Your Character</h1>
+    </header>
+    <main>
+        <fieldset>
+            <legend>Your Character</legend>
+            <div class="form-row">
+                <label for="fullname">Full Name</label>
+                <input id="fullname" type="text" name="fullname" placeholder="Full Name">
+            </div>
+            <div class="form-row">
+                <label for="codename">Codename</label>
+                <input id="codename" type="password" name="codename" placeholder="Codename">
+            </div>
+            <div class="form-row">
+                <label for="bday">Birthday</label>
+                <input id="bday" type="date" name="bday">
+            </div>
+            <div class="form-row">
+                <label for="class">Class</label>
+                <select id="class" name="class">
+                    <option value="tank">Tank</option>
+                    <option value="assassin">Assassin</option>
+                    <option value="sniper">Shooter</option>
+                    <option value="support">Support</option>
+                    <option value="mage">Mage</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label><input type="radio" name="gender" value="male">Male</label>
+                <label><input type="radio" name="gender" value="female">Female</label>
+            </div>
+            <div class="form-row">
+                <label for="lore">Backstory</label>
+                <textarea id="lore" name="lore"></textarea>
+            </div>
+            <div class="form-row">
+                <label for="color">Color of Armor</label>
+                <input id="color" type="color" value="#00F">
+            </div>
+            <div class="form-row">
+                <label for="number">Player Number</label>
+                <input id="number" type="number" min="0" max="999" step="1">
+            </div>
+            <div class="form-row">
+                <label for="perm">Permission to Create?</label>
+                <input id="perm" name="perm" type="checkbox">
+            </div>
+            <div class="form-row">
+                <div class="spacer"></div>
+                <input type="submit">
+            </div>
+        </fieldset>
+    </main>
+    <footer>
+        <p>&copy; Troy Schwalger</p>
+    </footer>
+</body>
+</html>

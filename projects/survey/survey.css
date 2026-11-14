@@ -1,0 +1,92 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(255, 70, 70);
+}
+
+header {
+    background-color: rgb(255, 111, 0);
+    border:5px solid orange;
+    border-radius: 10px;
+    margin:5px
+}
+
+fieldset {
+    background-color: rgb(255, 111, 111);
+    border-color:blueviolet;
+    border-width: 10px;
+}
+
+fieldset legend {
+    background-color: rgb(214, 100, 255);
+    border:3px solid purple;
+    border-radius: 10px;
+}
+
+.form-row {
+    margin:10px;
+    font-weight: 700;
+    display: flex;
+    gap:10px;
+}
+
+.form-row label {
+    width:40%;
+    text-align:right;
+}
+
+.form-row input {
+    background-color: rgb(255, 233, 135);
+}
+
+.form-row select {
+    background-color: rgb(255, 233, 135);
+}
+
+.form-row select:focus {
+    background-color: greenyellow;
+}
+
+.form-row textarea {
+    background-color: rgb(255, 233, 135);
+}
+
+.form-row textarea:focus {
+    background-color: greenyellow;
+}
+
+.form-row input:focus {
+    background-color: yellowgreen;
+}
+
+.form-row input[type=submit] {
+    background-color: blue;
+}
+
+.form-row input[type=submit]:hover {
+    background-color: aqua;
+}
+
+.spacer {
+    width:40%;
+}
+
+
+
+@media ONLY screen AND (max-width:500px) {
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-row label {
+        text-align: left;
+    }
+
+    .form-row input, .form-row select {
+        font-size: large;
+    }
+
+    .form-row input[type=submit] {
+        padding:10px 10px;
+        font-size:larger;
+    }
+}
