@@ -15,20 +15,20 @@
     </nav>
     <main>
         <h2>Fantastic freeform figs for four fizzy fruits</h2>
-        <form action="formprocessing.html" method="post">
+        <form action="formprocessing.html" method="post" id="myForm">
             <fieldset>
                 <legend>Information</legend>
                 <div class="form-row">
-                    <label for="personname">Full Name</label>
-                    <input id="personname" type="text" name="fullname" placeholder="Full Name">
+                    <label for="fullname">Full Name</label>
+                    <input id="fullname" type="text" name="fullname" placeholder="Full Name">
                 </div>
                 <div class="form-row">
-                    <label for="emailname">Email</label>
-                    <input id="emailname" type="email" name="email" placeholder="Email">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email" placeholder="Email">
                 </div>
                 <div class="form-row">
-                    <label for="passcode">Password</label>
-                    <input id="passcode" type="password" name="password" placeholder="Password">
+                    <label for="password">Password</label>
+                    <input id="password" type="password" name="password" placeholder="Password">
                 </div>
                 <div class="form-row">
                     <label for="bday">Birthday</label>
@@ -37,7 +37,7 @@
                 <div class="form-row">
                     <label name="state">State</label>
                     <select name="state" id="state">
-                        <option value="blank">--------</option>
+                        <option value="" disabled selected>--------</option>
                         <option value="HI">Hawaii</option>
                         <option value="CO">Colorado</option>
                         <option value="UT">Utah</option>
@@ -87,9 +87,49 @@
             <li>Flex is pretty flexible for switching from desktop to mobile view. It is also easy to move and sort the different parts.</li>
             <li>Each input is big and layered.</li>
         </ul>
+        <hr>
+        <ul>
+            <li>JavaScript is a programming language that allows us to change a webpage. Java was the main thing.</li>
+            <li>JavaScript can be ran in a browser, or the DOM, or by node.js</li>
+            <li>JQuery is a thing that can be used to change html. It is still well used in a lot of websites.</li>
+            <li>React is the most popular one</li>
+            <li>We used the event.preventDefault code to stop the form from being submitted if the if statements show that nothing is inputted.</li>
+        </ul>
     </main>
     <footer>
         <p>&copy; Troy Schwalger</p>
     </footer>
+    <script>
+            document.getElementById('myForm').addEventListener('submit',function(event) {
+                event.preventDefault();
+                alert("Form submitted");
+
+                const fullname = document.getElementById('fullname').value;
+                const email = document.getElementById('email').value;
+                const bday = document.getElementById('bday').value;
+                const password = document.getElementById('password').value;
+                const state = document.getElementById('state').value;
+
+                if (!fullname || !email || !password || !state) {
+                    alert("You need a name, email, password, and state.");
+                    return;
+                }
+
+                if (!bday || bday<18) {
+                    alert("You need to be 18.");
+                    return;
+                }
+
+                const formData = {
+                    name: fullname,
+                    email: email,
+                    password: password,
+                    bday: bday,
+                    state: state
+                };
+
+                console.log(formData);
+            });
+    </script>
 </body>
 </html>
