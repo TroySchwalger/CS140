@@ -39,6 +39,13 @@ fieldset {
     width:40%;
 }
 
+#message {
+    color:red;
+    font-weight: bolder;
+    font-size:xx-large;
+    text-shadow: 0px 0px 10px rgb(255, 64, 0);
+}
+
 @media ONLY screen AND (max-width:500px) {
     .form-row, .check-row {
         flex-direction: column;

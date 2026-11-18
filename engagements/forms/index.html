@@ -15,6 +15,7 @@
     </nav>
     <main>
         <h2>Fantastic freeform figs for four fizzy fruits</h2>
+        <div id="message"></div>
         <form action="formprocessing.html" method="post" id="myForm">
             <fieldset>
                 <legend>Information</legend>
@@ -95,6 +96,13 @@
             <li>React is the most popular one</li>
             <li>We used the event.preventDefault code to stop the form from being submitted if the if statements show that nothing is inputted.</li>
         </ul>
+        <hr>
+        <ul>
+            <li>AJAX lets parts of the page update without refreshing the whole page by sending and receiving information in the background. </li>
+            <li>We put the code in a different file so it stays organized, similary to css.</li>
+            <li>By using console when submitting the form or running a page, it will tell you what row an error is as well was a possible error code.</li>
+            <li>The forms and fields have the same id so that it can fetch the correct thing.</li>
+        </ul>
     </main>
     <footer>
         <p>&copy; Troy Schwalger</p>
@@ -129,6 +137,22 @@
                 };
 
                 console.log(formData);
+                const xhr = new XMLHttpRequest();
+                xhr.open("GET", "submit.json", true);
+                xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState === 4 && xhr.status === 200) {
+                        message = document.getElementById('message');
+                        const response = JSON.parse(xhr.responseText);
+                        message.textContent = response.message;
+                        form = document.getElementById('myForm');
+                        form.textContent = '';
+                    } else if (xhr.readyState === 4) {
+                        alert('Error submitting form.');
+                    }
+                };
+                xhr.send(JSON.stringify(formData));
+                alert(`Success: ${fullname}`)
             });
     </script>
 </body>
