@@ -13,9 +13,9 @@ nav {
 nav a {
     background-color: rgba(255, 0, 0, 0.558);
     font-weight: bolder;
-    font-size:x-large;
     border:5px solid blue;
-    padding:5px
+    padding:5px;
+    text-align: center;
 }
 
 nav a:hover {
@@ -25,5 +25,6 @@ nav a:hover {
 @media ONLY screen AND (max-width:500px) {
     nav {
         flex-direction: column;
+        font-size:x-large;
     }
 }
